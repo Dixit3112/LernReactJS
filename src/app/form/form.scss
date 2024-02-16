@@ -1,0 +1,65 @@
+.login-bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 75px);
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../../assets/image/loginbg.jpg);
+    .container{
+        width: 450px;
+        padding: 30px;
+        background-color: #ffffff1f;
+        box-shadow: inset 10px 10px 41px -4px rgba(0, 0, 0, 0.61);
+        border-radius: 15px;
+        .login{
+            form{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 10px;
+                padding: 30px;
+                border: 1px solid rgb(15, 48, 58);
+                label{
+                    color: rgb(15, 48, 58);
+                    input{
+                        width: 100%;
+                        height: 30px;
+                        color: rgb(0, 20, 70);
+                        background-color: #ffffff52;
+                        font-weight: 400;
+                        position: relative;
+                        border: none;
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                }
+                .btn{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    button{
+                        width: 100px;
+                        cursor: pointer;
+                        height: 30px;
+                        font-weight: 600;
+                        border: none;
+                        color: white;
+                        background-color: #103f96a9;
+                        border-radius: 10px 50px;
+                        transition: 0.3s ease-in-out;
+                        &:hover{
+                            color: #000045;
+                            background-color: #299610a9;
+                            transition: 0.3s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
